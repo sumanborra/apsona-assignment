@@ -1,0 +1,154 @@
+*body{
+    margin: 0px;
+}
+.main-container-notes{
+    height: 100vh;
+    overflow: hidden;
+}
+.register-page-main-container{
+    height: 100vh;
+    background-color: azure;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.register-form-container{
+    border-radius: 12px;
+    padding: 10px;
+    border: 1px solid #000000;
+}
+.input-element{
+    font-family: "Roboto";
+    font-size: 16px;
+    border-radius: 10px;
+    height: 30px;
+    width: 160px;
+    outline: none;
+
+}
+.custom-button{
+    height: 30px;
+    width: 80px;
+    padding: 4px;
+    border: none;
+    border-radius: 6px;
+    background-color: rgb(167, 91, 238);
+    cursor: pointer;
+}
+.hyper-link-style{
+    font-family: "Roboto";
+    font-size: 16px;
+    color: #5552f7;
+    cursor: pointer;
+}
+.hide-container{
+    display: none;
+}
+.visible-container{
+    display: flex;
+}
+.home-main-container{
+    height: 150vh;
+    padding: 30px;
+    background-color: azure;
+
+}
+.search-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.serch-input-element{
+    height: 40px;
+    width: 360px;
+    padding: 5px;
+    font-family: "Roboto";
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background-color: rgb(206, 164, 245);
+    font-size: 16px;
+    color: #000000;
+    
+}
+.search-button{
+    height: 40px;
+    width: 80px;
+    padding: 5px;
+    background-color: rgb(101, 240, 105);
+    border: none;
+    border-radius: 20px;
+    margin-left: 5px;
+    font-family: "Roboto";
+    font-size: 16px;
+    cursor: pointer;
+}
+.menu-container{
+    width: 15vw;
+    padding: 10px;
+    background-color: rgb(218, 234, 249);
+    margin-top: 50px;
+    border-radius: 10px;
+}
+.menu-list-container{
+    font-size: 18px;
+    font-weight: 600;
+    font-family: "Roboto";
+    list-style-type: none;
+}
+.menu-list-items{
+    margin-top: 20px;
+    cursor: pointer;
+}
+.menu-list-items:hover{
+    background-color: rgb(144, 241, 167);
+    padding: 4px;
+    border-radius: 4px;
+}
+.notes-menu-container{
+    display: flex;
+}  
+.notes-container-add{
+    background-color: #ffffff;
+    width: 85vw;
+    border-radius: 10px;
+    margin-top: 40px;
+    margin-left: 5px;
+    
+}
+
+
+.note-add-input-element{
+    background-color: #ffffff;
+    height: 30px;
+    width: 180px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    font-family: "Roboto";
+    color: #000000;
+    padding: 5px;
+    
+}
+.notes-write{
+    width: 50%;
+    height: 6vh;
+}
+.writing-notes-styles{
+    padding: 10px;
+    border: 1px solid #000000;
+    border-radius: 6px;
+    font-family: "Roboto";
+    font-size: 16px;
+    width: 15vw;
+    margin: 5px;
+}
+.notes-list-container-adding{
+    height: 40vh;
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    margin-top: 10px;
+}

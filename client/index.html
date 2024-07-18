@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes</title>
+    <link rel="stylesheet" href="./index.css">
+    
+</head>
+<body>
+    <div class="main-container-notes">
+    <div class="register-page-main-container register-container" id="registerPage">
+        <h1>User Registration</h1>
+        <form class="register-form-container" id="formRegisterSubmitted">
+            <div>
+                <label for="name">UserName:</label>
+                <br/>
+                <input type="email" id="name" class="input-element"/>
+            </div>
+            <br/>
+            <div>
+                <label for="password">Password</label>
+                <br/>
+                <input type="password" id="password" class="input-element"/>
+            </div>
+            <br/>
+            <button type="submit" class="custom-button">submit</button>
+        </form>
+        <p>alredy have an account  <a href="#loginPage" target= "_self" class="hyper-link-style" id="ancorLogin">Login</a></p>
+    </div>
+    <div class="register-page-main-container" id="loginPage">
+        <h1>User Login</h1>
+        <form class="register-form-container" id="loginFormSumitted">
+            <div>
+                <label for="name">UserName:</label>
+                <br/>
+                <input type="email" id="nameLogin" class="input-element"/>
+            </div>
+            <br/>
+            <div>
+                <label for="password">Password</label>
+                <br/>
+                <input type="password" id="passwordLogin" class="input-element"/>
+            </div>
+            <br/>
+            <button type="submit" class="custom-button" >submit</button>
+        </form>
+        <p>If you don't have an account  please<a href="#registerPage" target="_self" class="hyper-link-style" id="ancorRegister">Sin up</a></p>
+    </div>
+    <div id="homePage" class="home-main-container">
+        <div class="search-container">
+            <input type="search" class="serch-input-element" placeholder="search Note"/>
+            <button type="button" class="search-button">search</button>
+        </div>
+        <div class="notes-menu-container">
+            <div class="menu-container">
+                <ul class="menu-list-container">
+                    <li class="menu-list-items">Notes</li>
+                    <li class="menu-list-items">Remainders</li>
+                    <li class="menu-list-items">Edit labels</li>
+                    <li class="menu-list-items">Archive</li>
+                    <li class="menu-list-items">Trash</li>
+                </ul>
+            </div>
+        <div id="netesAddingMainContainer">
+            <div class="notes-container-add">
+                <input id="titleNotes" type="text" class="note-add-input-element" placeholder="Title:"/><br/>
+                <textarea id="notesText" cols="40" rows="60" class="note-add-input-element notes-write" placeholder="note:"></textarea><br/>
+                <br/>
+                <button type="button" class="search-button" id="addNoteButton">Add Note</button>
+            </div>
+            <div id="noteslistContainer" class="notes-list-container-adding">
+
+            </div>
+            
+        </div>
+        </div>
+
+    </div>
+</div>
+    <script src="./index.js"></script>
+</body>
+</html>
