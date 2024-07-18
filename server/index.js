@@ -15,7 +15,7 @@ const initializeDBAndServer = async () => {
     const password = encodeURIComponent("Suman@8978");
 
     //  connection URI obtained from MongoDB Atlas
-    const uri = `mongodb+srv://sumanborra:Suman@8978@suman.frnfj7m.mongodb.net/?retryWrites=true&w=majority&appName=suman`;
+    const uri = `mongodb+srv://${username}:${password}@suman.frnfj7m.mongodb.net/?retryWrites=true&w=majority&appName=suman`;
 
     client = new MongoClient(uri);
 
