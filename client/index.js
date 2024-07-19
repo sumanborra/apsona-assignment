@@ -36,7 +36,7 @@ async function usersNotesLists (){
             },
             
            }
-        const response = await fetch(`http://localhost:3000/getUserData/${userInDb}`,options)
+        const response = await fetch(`https://apsona-assignment-n0zn.onrender.com/getUserData/${userInDb}`,options)
         const dataNotes = await response.json();
         if(response.status === 200){
             notesArray= dataNotes.result.notesList
@@ -45,8 +45,9 @@ async function usersNotesLists (){
         
     }
 }
-usersNotesLists();
-
+if(cookie[0] !== ""){
+    usersNotesLists();
+}
 
 async function registartion(event){
     const email = document.getElementById("name");
@@ -65,7 +66,7 @@ async function registartion(event){
         body:JSON.stringify(userDetails)
        }
 
-       const response = await fetch("http://localhost:3000/register",options);
+       const response = await fetch("https://apsona-assignment-n0zn.onrender.com/register",options);
        const data = await response.json();
        if(response.status === 200){
         window.location.replace("#loginPage");
@@ -95,7 +96,7 @@ async function loginSubmit(event){
         body:JSON.stringify(userDetails)
        }
 
-       const response = await fetch("http://localhost:3000/login",options)
+       const response = await fetch("https://apsona-assignment-n0zn.onrender.com/login",options)
        const data = await response.json();
        
        if(response.status === 200){
@@ -114,7 +115,7 @@ async function loginSubmit(event){
 loginFormSumitted.addEventListener("submit",loginSubmit)
 
 async function addingNotes(){
-    
+    console.log(cookie)
     const userInDb =cookie[1].split("=")[1];
     const jwtToken = cookie[0].split("=")[1]
     const titleNotes = document.getElementById("titleNotes");
@@ -141,7 +142,7 @@ async function addingNotes(){
         body:JSON.stringify(notesDetails)
        }
 
-       const response = await fetch(`http://localhost:3000/upload-notes/${userInDb}`,options)
+       const response = await fetch(`https://apsona-assignment-n0zn.onrender.com/upload-notes/${userInDb}`,options)
        const data = await response.json();
        
 
@@ -154,4 +155,4 @@ async function addingNotes(){
 
 addNoteButton.addEventListener("click",addingNotes)
 
-
+console.log()

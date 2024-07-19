@@ -22,7 +22,7 @@ const initializeDBAndServer = async () => {
     try {
         await client.connect();
         console.log("Connected to MongoDB.....");
-        app.listen(8080, ﻿() => {
+        app.listen(3000, ﻿() => {
             console.log('Server running on port: 3000');
         });
     } catch (error) {
